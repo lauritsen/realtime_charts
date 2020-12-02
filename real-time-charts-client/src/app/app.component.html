@@ -1,3 +1,7 @@
+<div *ngIf="!signalRService.data">
+  <button (click)="fetchData()">Fetch data</button>
+</div>
+
 <div style="display: block" *ngIf="signalRService.data">
   <canvas
     baseChart

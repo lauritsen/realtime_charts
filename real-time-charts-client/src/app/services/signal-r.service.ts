@@ -25,8 +25,7 @@ export class SignalRService {
   public addTransferChartDataListener = () => {
     this.hubConnection.on('transferchartdata', (data) => {
       this.data = data;
-      console.log(data);
-    })
+    });
   }
 
   public broadcastChartData = () => {
@@ -45,7 +44,6 @@ export class SignalRService {
 
   public addBroadcastChartDataListener = () => {
     this.hubConnection.on('broadcastchartdata', (data) => {
-      console.log('will broadcast this ', data);
       this.broadcastedData = data;
     })
   }

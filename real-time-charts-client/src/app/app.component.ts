@@ -30,6 +30,9 @@ export class AppComponent implements OnInit {
     this.signalRService.startConnection();
     this.signalRService.addTransferChartDataListener();
     this.signalRService.addBroadcastChartDataListener();
+  }
+
+  public fetchData() {
     this.startHttpRequest();
   }
 
