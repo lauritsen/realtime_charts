@@ -11,3 +11,10 @@
   >
   </canvas>
 </div>
+<br /><br />
+<ul>
+  <li *ngFor="let data of signalRService.broadcastedData">
+    <strong>Label: </strong>{{ data.label }} - <strong>Value: </strong
+    >{{ data.data[0] }}
+  </li>
+</ul>
